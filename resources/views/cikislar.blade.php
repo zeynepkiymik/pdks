@@ -127,7 +127,7 @@
          <div class="row">
            <div class="col-md-12">
              <div class="copyright-content">
-               <p>Copyright ©️ 2020 <a rel="nofollow" href="https://uideck.com">UIdeck</a> All Right Reserved</p>
+               <p>Copyright ©️ 2020 <a rel="nofollow" href="#"></a> </p>
              </div>
            </div>
          </div>
