@@ -24,8 +24,10 @@ use App\Models\pdksz;
 //});
 Route::get('/', [GiriscikisController::class , 'index'])->name('homepage');
 
+// İnsanların gördüğü
+Route::get('/girisler', [GirisController::class , 'girisler'])->name('girisler');
+Route::get('/cikislar', [CikisController::class , 'cikislar'])->name('cikislar');
+
+/// sisteme kayıt ettiriyor  DB Yazıyor
 Route::post('/giris', [GiriscikisController::class , 'giris'])->name('pdksz.giris');
-
-
-
 Route::post('/cikis', [GiriscikisController::class , 'cikis'])->name('pdksz.cikis');
