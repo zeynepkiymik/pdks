@@ -5,7 +5,7 @@
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-   <title>Fusion - pdksz</title>
+   <title>PDKS - Z</title>
 
    <!-- Bootstrap CSS -->
    <link rel="stylesheet" href="assets/css/bootstrap.min.css" >
@@ -80,7 +80,7 @@
 
                <div class="header-button">
 
-                 <table border="1" class="table table-dark">
+                 <table border="1" class="table ">
 
                    <tr>
                       <td> NO </td>
@@ -128,7 +128,7 @@
          <div class="row">
            <div class="col-md-12">
              <div class="copyright-content">
-               <p>Copyright ©️ 2020 <a rel="nofollow" href="https://uideck.com">UIdeck</a> All Right Reserved</p>
+               <p>Copyright ©️ 2020 <a rel="nofollow" href="#"></a> </p>
              </div>
            </div>
          </div>
