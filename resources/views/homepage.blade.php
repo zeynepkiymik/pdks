@@ -31,42 +31,28 @@
      <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
        <div class="container">
          <!-- Brand and toggle get grouped for better mobile display -->
-         <a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt=""></a>
+         <a href="{{ route('homepage') }}" class="navbar-brand"><img src="assets/img/PDKSZ.png" alt=""></a>
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
            <i class="lni-menu"></i>
          </button>
          <div class="collapse navbar-collapse" id="navbarCollapse">
            <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
-             <li class="nav-item active">
-               <a class="nav-link" href="#hero-area">
-                 Home
+             <li class="nav-item ">
+               <a class="nav-link" href="{{ route('homepage') }}">
+                 ANASAYFA
                </a>
              </li>
              <li class="nav-item">
-               <a class="nav-link" href="#services">
-                 Services
+               <a class="nav-link" href="{{ route('girisler') }}">
+                 GİRİŞLER
                </a>
              </li>
              <li class="nav-item">
-               <a class="nav-link" href="#team">
-                 Team
+               <a class="nav-link" href="{{ route('cikislar') }}">
+                 ÇIKIŞLAR
                </a>
              </li>
-             <li class="nav-item">
-               <a class="nav-link" href="#pricing">
-                 Pricing
-               </a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link" href="#testimonial">
-                 Testimonial
-               </a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link" href="#contact">
-                 Contact
-               </a>
-             </li>
+
            </ul>
          </div>
        </div>
@@ -89,7 +75,7 @@
 
                <div class="header-button">
 
-                 <form  action="{{ route('pdksz.giris')}}" method="post">
+                 <form action="{{ route('pdksz.giris')}}" method="post">
                      @csrf
                       <input type="hidden" name="tc" id="h1" value="">
                       <button type="submit" class="btn btn-common"  name="button"> GİRİŞ </button> <!-- formda <a> ise button yap  -->
