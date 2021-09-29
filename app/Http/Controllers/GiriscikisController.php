@@ -16,7 +16,7 @@ public function giris (Request $request){ //tc yi çağırmak için
   $kayit->type = "giris";
   $kayit->tarih = date("Y-m-d H:i:s");
   $kayit->save();
-  return redirect()->back();
+  return redirect()->back()->with('mesaj' , 'Sisteme Giriş Yaptınız.');
 
  }
 
@@ -26,9 +26,6 @@ public function giris (Request $request){ //tc yi çağırmak için
    $kayit->type = "cikis";
    $kayit->tarih = date("Y-m-d H:i:s");
    $kayit->save();
-   return redirect()->back();
-
+   return redirect()->back()->with('mesaj' , 'Sistemden Çıkış Yaptınız.');
 }
-
-
 }
