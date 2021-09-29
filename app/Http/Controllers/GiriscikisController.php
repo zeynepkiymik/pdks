@@ -17,7 +17,9 @@ public function giris (Request $request){ //tc yi çağırmak için
   $kayit->tarih = date("Y-m-d H:i:s");
   $kayit->save();
   return redirect()->back()->with('mesaj' , 'Sisteme Giriş Yaptınız.');
+  $değer = 'Sisteme Giriş Yaptınız.' ;
 
+  echo $değer;
  }
 
  public function cikis(Request $request){
