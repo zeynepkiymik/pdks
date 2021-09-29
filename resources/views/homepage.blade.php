@@ -5,7 +5,7 @@
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-   <title>Fusion - Bootstrap 4 Template</title>
+   <title>PDKS - Z</title>
 
    <!-- Bootstrap CSS -->
    <link rel="stylesheet" href="assets/css/bootstrap.min.css" >
@@ -65,7 +65,7 @@
          <div class="row">
            <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
              <div class="contents">
-               <h2 class="head-title">PDKS-Z<br>FUSION</h2>
+               <h2 class="head-title">PDKS-Z<br></h2>
 
                <div class="">
             <input type="number" name="tc" id="tc" placeholder="TC NO GİRİNİZ" onkeyup="degis()" />
@@ -112,7 +112,7 @@
          <div class="row">
            <div class="col-md-12">
              <div class="copyright-content">
-               <p>Copyright ©️ 2020 <a rel="nofollow" href="https://uideck.com">UIdeck</a> All Right Reserved</p>
+               <p>Copyright ©️ 2020 <a rel="nofollow" href="#"></a> </p>
              </div>
            </div>
          </div>
