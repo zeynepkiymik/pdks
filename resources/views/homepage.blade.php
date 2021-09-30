@@ -5,7 +5,7 @@
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-   <title>PDKS - Z</title>
+   <title> {{ session('mesaj')}} PDKS - Z</title>
 
    <!-- Bootstrap CSS -->
    <link rel="stylesheet" href="assets/css/bootstrap.min.css" >
@@ -52,7 +52,11 @@
                  ÇIKIŞLAR
                </a>
              </li>
-
+             <li class="nav-item ">
+               <a class="nav-link active"  >
+                 {{ session('mesaj')}}
+               </a>
+             </li>
            </ul>
          </div>
        </div>
@@ -68,7 +72,6 @@
                <h2 class="head-title">PDKS-Z<br></h2>
 
                <div class="">
-            <input type="number" name="tc" id="tc" placeholder="TC NO GİRİNİZ" onkeyup="degis()" />
 
           </div>
 
@@ -77,17 +80,21 @@
 
                  <form action="{{ route('pdksz.giris')}}" method="post">
                      @csrf
-                      <input type="hidden" name="tc" id="h1" value="">
+                     <input type="number" name="tc" id="tc" placeholder="TC NO GİRİNİZ" onkeyup="degis()" required />
+
+
                       <button type="submit" class="btn btn-common"  name="button"> GİRİŞ </button> <!-- formda <a> ise button yap  -->
                  </form>
                  <hr>
-                 <form action="{{ route('pdksz.cikis')}}" method="post">
+                 <form action="{{ route('pdksz.cikis')}}" method="post" >
                    @csrf
-                   <input type="hidden" name="tc" id="h2" value="">
-                   <button type="submit" class="btn btn-border video-popup"> ÇIKIŞ </button>
+                   <input type="number" name="tc" id="tc" placeholder="TC NO GİRİNİZ" onkeyup="degis()" required />
 
+                   <button type="submit" class="btn btn-border video-popup"> ÇIKIŞ </button>
                  </form>
                </div>
+
+                    {{ session('mesaj') }}
 
              </div>
            </div>
@@ -148,15 +155,23 @@
  </body>
 
 <script type="text/javascript">
-var degis;
+var degis ;
 $(document).ready( function(){
+
+/*
   self.degis = function(){
 
    var tc = $("#tc").val();
     $("#h1").val(tc);
     $("#h2").val(tc);
   }
+*/
+  @if (session('mesaj'))
+    alert(" {{ session('mesaj')}} ")
+  @endif
+
 });
+
 
 </script>
 
