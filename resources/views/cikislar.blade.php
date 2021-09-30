@@ -79,7 +79,7 @@
 
                <div class="header-button">
 
-                 <table border="1" class="table table-dark">
+                 <table border="1" class="table table-secondary" >
 
                    <tr>
                       <td> NO </td>
