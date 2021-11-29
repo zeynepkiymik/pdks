@@ -18,7 +18,6 @@ public function giris (Request $request){ //tc yi çağırmak için
   $kayit->save();
   //session('mesaj' ,'Sisteme giriş');
   return redirect()->back()->with('mesaj' , 'Sisteme Giriş Yaptınız.');
-
  }
 
  public function cikis(Request $request){
@@ -29,4 +28,5 @@ public function giris (Request $request){ //tc yi çağırmak için
    $kayit->save();
    return redirect()->back()->with('mesaj' , 'Sistemden Çıkış Yaptınız.');
 }
+
 }
