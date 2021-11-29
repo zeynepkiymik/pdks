@@ -5,7 +5,7 @@
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-   <title> {{ session('mesaj')}} PDKS - Z</title>
+   <title> {{ session('mesaj')}} PDKS-Z</title>
 
    <!-- Bootstrap CSS -->
    <link rel="stylesheet" href="assets/css/bootstrap.min.css" >
@@ -52,11 +52,7 @@
                  ÇIKIŞLAR
                </a>
              </li>
-             <li class="nav-item ">
-               <a class="nav-link active"  >
-                 {{ session('mesaj')}}
-               </a>
-             </li>
+            
            </ul>
          </div>
        </div>
@@ -168,11 +164,8 @@ $(document).ready( function(){
 */
   @if (session('mesaj'))
     alert(" {{ session('mesaj')}} ")
-  @endif
+  @endif //başka sayfada kutu içinde mesaj
 
 });
-
-
 </script>
-
 </html>
