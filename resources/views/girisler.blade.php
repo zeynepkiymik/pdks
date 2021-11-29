@@ -5,7 +5,7 @@
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-   <title>PDKS - Z</title>
+   <title>PDKS-Z</title>
 
    <!-- Bootstrap CSS -->
    <link rel="stylesheet" href="assets/css/bootstrap.min.css" >
@@ -58,6 +58,11 @@
              </li>
 
            </ul>
+            <li class="nav-item ">
+               <a class="nav-link active"  >
+                 {{ session('mesaj')}}
+               </a>
+             </li>
          </div>
        </div>
      </nav>
@@ -75,7 +80,7 @@
                <div class="">
         <!--    <input type="number" name="tc" id="tc" placeholder="TC NO GİRİNİZ" onkeyup="degis()" />
 
-          </div>-->
+        </div>--> <!-- giriş çıkış için ortak tc butonu -->
 
 
                <div class="header-button">
@@ -90,16 +95,12 @@
                     </tr>
 
                    @foreach ($pdksz as $key => $value)
-
-
                      <tr>
                    <td> {{$key+1 }} :</td>
                    <td>  {{ $value->tc }}</td>
                    <td>  {{ $value->type }}</td>
                    <td>  {{ $value->tarih }}</td>
                      </tr>
-
-
                    @endforeach
 
                  </table>
@@ -163,5 +164,13 @@
 
  </body>
 
+<script type="text/javascript">
+var degis ;
+$(document).ready( function(){
+  @if (session('mesaj'))
+    alert(" {{ session('mesaj')}} ")
+  @endif //başka sayfada kutu içinde mesaj
+
+});
 
 </html>
